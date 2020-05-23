@@ -14,9 +14,9 @@ create table roles(
 -- user table to store user data
 create table users(
     id INT(5) AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(30) NOT NULL,
+    email VARCHAR(100) NOT NULL,
     fullname VARCHAR(10) NOT NULL,
-    userpassword VARCHAR(40) NOT NULL,
+    userpassword VARCHAR(60) NOT NULL,
     roleId INT(5),
     FOREIGN KEY(roleId) REFERENCES roles(roleId)
 );
